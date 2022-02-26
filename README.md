@@ -86,3 +86,5 @@ Dans le dossier du projet:
 Dans le dossier du projet, lancement du script
 
     ./mon_env/bin/python3 python3 sender_oak_depth.py
+
+![fakewebcam in VLC](oak_depth_in_vlc.png?raw=true "Title")
