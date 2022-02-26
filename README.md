@@ -1,6 +1,7 @@
 # fakewebcam
 Envoi d'images avec OpenCV sur une caméra virtuelle en python
 
+![fakewebcam in VLC](color_depth.png?raw=true "Title")
 
 ## Creation d'une caméra virtuelle avec v4l2loopback
 
@@ -43,6 +44,8 @@ Valable pour Debian 11
     sudo echo "v4l2loopback" > /etc/modules-load.d/v4l2loopback.conf
     sudo echo "options v4l2loopback video_nr=11" > /etc/modprobe.d/v4l2loopback.conf
     sudo update-initramfs -c -k $(uname -r)
+
+Reboot
 
 ### RealSense
 #### Sans VirtualEnv
