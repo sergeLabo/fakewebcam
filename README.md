@@ -17,6 +17,7 @@ Le device est détruit au reboot
 
 Insert the v4l2loopback kernel module.
     sudo modprobe v4l2loopback devices=2
+
 will create two fake webcam devices
 
 You can also specify the device IDs manually; e.g.
@@ -26,6 +27,7 @@ Will create 3 devices (/dev/video3, /dev/video4 & /dev/video7)
 
 Liste des devices existant
     sudo ls /dev/video*
+
 retourne:
     /dev/video0  /dev/video1  /dev/video2  /dev/video3  /dev/video4  /dev/video5
 
@@ -40,6 +42,7 @@ Valable pour Debian 11
 ### RealSense
 #### Sans VirtualEnv
     python3 -m pip install numpy opencv-python pyfakewebcam pyrealsense2
+
 Dans le dossier du projet, lancement du script:
     python3 sender_rs_depth.py
 
@@ -48,12 +51,14 @@ Dans le dossier du projet:
     python3 -m venv mon_env
     source mon_env/bin/activate
     python3 -m pip install numpy opencv-python pyfakewebcam pyrealsense2
+
 Dans le dossier du projet, lancement du script
     ./mon_env/bin/python3 python3 sender_rs_depth.py
 
 ### OAK-D Lite de Luxonis
 #### Sans VirtualEnv
     python3 -m pip install numpy opencv-python pyfakewebcam depthai
+
 Dans le dossier du projet, lancement du script:
     python3 sender_oak_depth.py
 
@@ -62,5 +67,6 @@ Dans le dossier du projet:
     python3 -m venv mon_env
     source mon_env/bin/activate
     python3 -m pip install numpy opencv-python pyfakewebcam depthai
+
 Dans le dossier du projet, lancement du script
     ./mon_env/bin/python3 python3 sender_oak_depth.py
