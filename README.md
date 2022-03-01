@@ -67,6 +67,13 @@ Dans le dossier du projet, lancement du script
 
     ./mon_env/bin/python3 python3 sender_rs_depth.py
 
+#### Utilisation: méthode un peu geek mais simple !
+Au début du script:
+
+* Changer le device si besoin le device VIDEO = '/dev/video11'
+* SLIDER = 1 pour régler la profondeur. Une fenêtre avec un slider permet de régler la valeur de profondeur. Cette valeur n'est pas enregistrée. 
+* Quand une valeur vous convient, modifier la valeur de CLIPPING_DISTANCE_IN_MILLIMETER et mettre SLIDER = 0. Il n'y aura plus d'affichage de fenêtre, seulement l'envoi visualisable dans VLC.
+
 ### OAK-D Lite de Luxonis
 #### Sans VirtualEnv
 
