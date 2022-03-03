@@ -59,6 +59,7 @@ Dans le dossier du projet, lancement du script:
 #### Avec VirtualEnv
 Dans le dossier du projet:
 
+    sudo apt install python3-venv
     python3 -m venv mon_env
     source mon_env/bin/activate
     python3 -m pip install numpy opencv-python pyfakewebcam pyrealsense2
@@ -86,6 +87,7 @@ Dans le dossier du projet, lancement du script:
 #### Avec VirtualEnv
 Dans le dossier du projet:
 
+    sudo apt install python3-venv
     python3 -m venv mon_env
     source mon_env/bin/activate
     python3 -m pip install numpy opencv-python pyfakewebcam depthai
